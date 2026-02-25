@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+public class GameManager
+{
+    public static int TotalPlayers;
+
+    public static void ShowStatus()
+    {
+        Console.WriteLine($"[정적] 총 플레이어 수: {TotalPlayers}");
+    }
+
+    public string playerName;
+
+    public void Greet()
+    {
+        Console.WriteLine($"[인스턴스] 안녕하세요, {playerName}님!");
+    }
+}
